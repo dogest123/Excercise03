@@ -10,7 +10,30 @@ namespace ConsoleApplication1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("djt me m");
+
+            HLine(10, '*'); Console.WriteLine();
+            HLine(10, 'a'); Console.WriteLine();
+            HLine(10, 'b'); Console.WriteLine();
+
+            VLine(10, '*');
+            VLine(10, 'a');
+        }
+
+        static void HLine(int n, char c)
+        {
+            for (int i = 0; i < n; i++)
+                Console.Write(c);
+        }
+
+        static void VLine(int n,char c)
+        {
+            for (int i = 0; i < n; i++)
+                Console.WriteLine(c);
+        }
+
+        static void DLine(int n,char c)
+        {
+
         }
     }
 }
